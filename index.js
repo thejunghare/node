@@ -23,3 +23,10 @@ const currentOs = {
     freeMem: os.freemem(),
 }
 console.log(currentOs);
+
+// PATH module
+const path = require('path')
+
+console.log(path.sep);
+console.log(path.join('/parent', 'child', 'file.txt'));
+console.log(path.basename(path.join('/parent', 'child', 'file.txt')));
