@@ -54,3 +54,23 @@ writeFile('./parent/file-async.txt', 'utf8', (err, result) => {
     }
     console.log(result);
 })
+
+// HTTP module
+const http = require('http')
+
+const server = http.createServer((request, response) => {
+    if (request.url === '/') {
+        response.end('welcome')
+    }
+    else if (request.url === '/about') {
+        response.end('about')
+    } else {
+        response.end(`
+            <h1>Oops!</h1>
+            <p>Page not found</p>
+            <a href="/">back home</a>
+        `)
+    }
+})
+
+server.listen(5000)
