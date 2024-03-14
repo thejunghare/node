@@ -1,4 +1,4 @@
-const sayHello = (fname) =>{
+const sayHello = (fname) => {
     console.log(`Hello there ${fname}`);
 }
 

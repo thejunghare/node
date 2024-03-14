@@ -3,6 +3,7 @@ console.log(fname); */
 
 const fnames = require('./fnames')
 const sayHello = require('./sayHelloFunc')
+require('./addValuesFunc') // direct execute module
 
 // console.log(fname);
 
